@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+element { 
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+}
+
+body{
+    margin-left:2.5em;
+    margin-right:2.5em;
+ }
+
+.logo {
+    float: left;
+    margin-top: 3.125em;
+    margin-left: -1em;
+    margin-bottom: 1.25em;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100%;
+    height: 3.125em;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1.87em 0;
+    margin-left: 2.5em;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul li::before {
+   content: "";
+   width: 0%;
+   height: .125em;
+   background-color: blue;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+   position: absolute;
+   top: 0%;
+}
+
+.nav-links ul li:hover::before {
+    width: 100%;
+}
+
+nav li a:hover {
+    color: blue;
+}
+
+.page-headline {
+    clear: both;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.6em;
+}
+
+@media (max-width: 700px){
+    .nav-links ul li {
+        display: inline-block;
+    }
+    .nav-links {
+        position: relative;
+        height: 100vh;
+        width: 400px;
+    }
+}
+
+form {
+    width: 16.5em;
+    height: 5em;
+    margin-top: 1em;
+    display: flex;
+}
+
+form input {
+    flex: 56%;
+    outline: none;
+    border-style: solid;
+    border-color: rgb(242, 242, 242);
+    text-indent: .75em;  
+    font-size: 26px;
+    font-weight: 800;
+}
+
+form button {
+    background: blue;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    align-self: center;
+    padding: 1em 1em;
+    color: white;
+    font-size: 26px;
+    font-weight: 800;  
+}
+
+form .fa-location-dot {
+    background-color: rgb(242, 242, 242);
+    align-self: center;
+    padding: 2em 1.75em;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.container-filters {
+    padding-top: 1em;
+}
+
+.container-filters i {
+    display: inline-block;
+    background-color: pink;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 25px;
+}
+
+.container-filters button {
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(242, 242, 242);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 0;
+}
+
+.accommodations-col{
+    float: left;
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px;
+    width: 67%;
+    padding: 2em;
+}
+
+.hotels {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.hotel-listing {
+    background-color: white;
+    border-radius: 8%;
+}
+
+.hotel-image img{
+    width: 15em;
+    padding: .25em;
+    justify-content: center;
+    border-radius: 8%;
+}
+
+.most-popular{
+    float: right;
+}
+.most-popular-heading{
+    display: inline-block;
+    float: left;
+}
+
+.popular-image img{
+    width: 7.5em
+}
