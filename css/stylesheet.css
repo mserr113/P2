@@ -1,192 +1,260 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+    }
 
-element { 
-    box-sizing: border-box;
-}
+    element { 
+        box-sizing: border-box;
+    }
 
-.header {
-    width: 100%;
-}
+    .header {
+        width: 100%;
+    }
 
-body{
-    margin-left:2.5em;
-    margin-right:2.5em;
- }
+    body{
+        margin-left:2.5em;
+        margin-right:2.5em;
+    }
 
-.logo {
-    float: left;
-    margin-top: 3.125em;
-    margin-left: -1em;
-    margin-bottom: 1.25em;
-}
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .logo {
+        float: left;
+        margin-top: 3.125em;
+        margin-left: -1em;
+        margin-bottom: 3em;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-nav img {
-    width: 100%;
-    height: 3.125em;
-}
+    nav img {
+        width: 100%;
+        height: 3.125em;
+    }
 
-.nav-links {
-    flex: 1;
-    text-align: right;
-}
+    .nav-links {
+        flex: 1;
+        text-align: right;
+    }
 
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 1.87em 0;
-    margin-left: 2.5em;
-    position: relative;
-}
-
-.nav-links ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-.nav-links ul li::before {
-   content: "";
-   width: 0%;
-   height: .125em;
-   background-color: blue;
-   display: block;
-   margin: auto;
-   transition: 0.5s;
-   position: absolute;
-   top: 0%;
-}
-
-.nav-links ul li:hover::before {
-    width: 100%;
-}
-
-nav li a:hover {
-    color: blue;
-}
-
-.page-headline {
-    clear: both;
-}
-
-h1 {
-    margin: 0;
-    font-size: 1.6em;
-}
-
-@media (max-width: 700px){
     .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 1.87em 0;
+        margin-left: 2.5em;
+        position: relative;
+    }
+
+    .nav-links ul li a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav-links ul li::before {
+    content: "";
+    width: 0%;
+    height: .125em;
+    background-color: blue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    position: absolute;
+    top: 0%;
+    }
+
+    .nav-links ul li:hover::before {
+        width: 100%;
+    }
+
+    nav li a:hover {
+        color: blue;
+    }
+
+    .page-headline {
+        clear: both;
+        line-height: 1.3em;
+    }
+
+    h1 {
+        font-size: 1.55em;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: ;
+    }
+
+    @media (max-width: 700px){
+        .nav-links ul li {
+            display: inline-block;
+        }
+        .nav-links {
+            position: relative;
+            height: 100vh;
+            width: 400px;
+        }
+    }
+
+    form {
+        width: 16em;
+        height: 4em;
+        margin-top: 1em;
+        display: flex;
+    }
+
+    form input {
+        flex: 56%;
+        outline: none;
+        border-style: solid;
+        border-color: rgb(242, 242, 242);
+        text-indent: .75em;  
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    ::placeholder {
+        color: black;
+        font-weight: 700;
+        letter-spacing: -.05em;
+    }
+
+    form button {
+        background: blue;
+        border: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        align-self: center;
+        padding: .75em 1em;
+        color: white;
+        font-size: 1.5em;
+        font-weight: 600;  
+    }
+
+    form .fa-location-dot {
+        background-color: rgb(242, 242, 242);
+        align-self: center;
+        padding: 1.32em .75em;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .container-filters {
+        padding-top: 2em;
+    }
+
+    .filters-heading {
+        margin-right: 2em;
+    }
+
+    .container-filters i {
+        display: inline-block;
+        background-color: rgb(222, 235, 255);
+        color: rgb(41, 109, 252);
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 25px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .container-filters button {
+        background:none;
+        border-style: solid;
+        border-color: rgb(231, 231, 231);
+        border-left: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding: .55em;
+        padding-left: 1.3em;
+        margin-right: .7em;
+        margin-left: -1.3em;
+        vertical-align: middle;
+    }
+
+    .accommodations-col{
+        float: left;
+        background-color: rgb(242, 242, 242);
+        border-radius: 25px;
+        width: 60%;
+        padding: 2em;
+    }
+
+    .accommodations-col h3 {
+        margin-bottom: 1em;
+    }
+
+    .hotels {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .hotel-listing {
+        background-color: white;
+        border-radius: 8%;
+        margin-bottom: 2em;
+    }
+
+    .hotel-image img{
+        width: 16em;
+        height: 7em;
+        object-fit: cover;
+        padding: .25em;
+        justify-content: center;
+        border-top-left-radius: 8% 16%;
+        border-top-right-radius: 8% 16%;
+    }
+
+    .hotel-name {
+        font-weight: 600;
+    }
+
+    .hotel-info {
+        padding-left: 1em;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .most-popular{
+        float: right;
+        width: 35%;
+        align-items: center;
+    }
+
+    .most-popular h3 {
         display: inline-block;
     }
-    .nav-links {
-        position: relative;
-        height: 100vh;
-        width: 400px;
+
+    .most-popular-star-icon {
+        float: right;
     }
-}
 
-form {
-    width: 16.5em;
-    height: 5em;
-    margin-top: 1em;
-    display: flex;
-}
+    .popular-image img{
+        display: inline-flex;
+        float: left;
+        width: 7em;
+        height: 7em;
+        object-fit: cover;
+        padding: 1em;
+        justify-content: center;
+        border-top-left-radius: 16% 16%;
+        border-bottom-left-radius: 16% 16%;
+    }
 
-form input {
-    flex: 56%;
-    outline: none;
-    border-style: solid;
-    border-color: rgb(242, 242, 242);
-    text-indent: .75em;  
-    font-size: 26px;
-    font-weight: 800;
-}
+    .popular-hotel-info {
+        display: inline;
+        float: right;
+    }
 
-form button {
-    background: blue;
-    border: none;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    align-self: center;
-    padding: 1em 1em;
-    color: white;
-    font-size: 26px;
-    font-weight: 800;  
-}
+    .activities {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
 
-form .fa-location-dot {
-    background-color: rgb(242, 242, 242);
-    align-self: center;
-    padding: 2em 1.75em;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
+    }
 
-.container-filters {
-    padding-top: 1em;
-}
-
-.container-filters i {
-    display: inline-block;
-    background-color: pink;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 25px;
-}
-
-.container-filters button {
-    background-color: white;
-    border-style: solid;
-    border-color: rgb(242, 242, 242);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding-left: 0;
-}
-
-.accommodations-col{
-    float: left;
-    background-color: rgb(242, 242, 242);
-    border-radius: 25px;
-    width: 67%;
-    padding: 2em;
-}
-
-.hotels {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-between;
-    align-items: center;
-}
-
-.hotel-listing {
-    background-color: white;
-    border-radius: 8%;
-}
-
-.hotel-image img{
-    width: 15em;
-    padding: .25em;
-    justify-content: center;
-    border-radius: 8%;
-}
-
-.most-popular{
-    float: right;
-}
-.most-popular-heading{
-    display: inline-block;
-    float: left;
-}
-
-.popular-image img{
-    width: 7.5em
-}
