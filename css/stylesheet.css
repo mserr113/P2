@@ -220,9 +220,12 @@
         margin-bottom: 1em;
     }
 
-    .most-popular{
+    .most-popular-col{
         float: right;
-        width: 35%;
+        background-color: rgb(242, 242, 242);
+        border-radius: 25px;
+        width: 30%;
+        padding: 2em;
         align-items: center;
     }
 
@@ -235,7 +238,6 @@
     }
 
     .popular-image img{
-        display: inline-flex;
         float: left;
         width: 7em;
         height: 7em;
@@ -247,10 +249,8 @@
     }
 
     .popular-hotel-info {
-        display: inline;
-        float: right;
+        flex-flow: row wrap;
     }
-
     .activities {
         display: flex;
         flex-flow: row wrap;
