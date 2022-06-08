@@ -2,9 +2,6 @@
         margin: 0;
         padding: 0;
         font-family: 'Raleway', sans-serif;
-    }
-
-    element { 
         box-sizing: border-box;
     }
 
@@ -171,6 +168,10 @@
         vertical-align: middle;
     }
 
+    .available-accommodations {
+        padding: 2em;
+    }
+
     .accommodations-col{
         float: left;
         background-color: rgb(242, 242, 242);
@@ -223,31 +224,89 @@
         width: 30%;
         padding: 2em;
         align-items: center;
-    }
+    }   
 
-    .most-popular h3 {
-        display: inline-block;
+    .most-popular-headline {
+        padding-bottom: 2em;
     }
 
     .most-popular-star-icon {
         float: right;
     }
-
+    
     .popular-image img{
         float: left;
         width: 7em;
         height: 7em;
         object-fit: cover;
-        padding: 1em;
+        padding: .25em;
         justify-content: center;
         border-top-left-radius: 16% 16%;
         border-bottom-left-radius: 16% 16%;
     }
 
+    .popular-hotel-listing {
+        display: flex;
+        width: 100%;
+        background-color: white;
+        border-radius: 5%/14%;
+        margin-bottom: 2em;
+        align-items: center;
+    }
+
+    .popular-hotel-info {
+        display: inline-block;
+        padding-left: 1em;
+        line-height: 2em;    
+    }
+
+    .activities-col {
+        clear: both;
+        width: 100%;
+        align-items: center;
+    }
+
     .activities {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
-
+        justify-content: flex-start;
     }
 
+    .activities-image img {
+        width: 22em;
+        height: 12em;
+        object-fit: cover;
+        padding: 1em;
+        border-top-left-radius: 12% 25%;
+        border-top-right-radius: 12% 25%;
+    }
+
+    .tall-activities-image img {
+        width: 22em;
+        height: 25em;
+        object-fit: cover;
+        padding: 1em;
+        border-top-left-radius: 14% 12%;
+        border-top-right-radius: 14% 12%;
+    }
+
+    .activities h4 {
+        padding-left: 2em;
+        border-bottom: cornflowerblue 1em;
+    }
+
+    footer {
+        background-color: rgb(242, 242, 242);
+        display: flex;
+        margin-top: 2em;
+        padding: 1em;
+        line-height: 2em;
+    }
+
+    footer ul {
+        display: inline-block;
+    }
+
+    footer ul li {
+        list-style: none;
+    }
