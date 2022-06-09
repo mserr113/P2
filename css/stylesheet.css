@@ -176,7 +176,7 @@
         float: left;
         background-color: rgb(242, 242, 242);
         border-radius: 25px;
-        width: 60%;
+        width: 66%;
         padding: 2em;
     }
 
@@ -192,13 +192,14 @@
     }
 
     .hotel-listing {
+        width: 31%;
         background-color: white;
         border-radius: 8%;
         margin-bottom: 2em;
     }
 
     .hotel-image img{
-        width: 16em;
+        width: 100%;
         height: 7em;
         object-fit: cover;
         padding: .25em;
@@ -221,22 +222,22 @@
         float: right;
         background-color: rgb(242, 242, 242);
         border-radius: 25px;
-        width: 30%;
+        width: 31%;
         padding: 2em;
         align-items: center;
     }   
 
-    .most-popular-headline {
-        padding-bottom: 2em;
+    .most-popular-headline h3 {
+        display: inline-block;
+        padding-bottom: 1em;
     }
-
     .most-popular-star-icon {
         float: right;
     }
     
     .popular-image img{
         float: left;
-        width: 7em;
+        width: 6em;
         height: 7em;
         object-fit: cover;
         padding: .25em;
@@ -272,32 +273,45 @@
         justify-content: flex-start;
     }
 
+    .tall-activities-listing {
+        background-color: white;
+        margin: 1em;
+        border-radius: 20px;
+        box-shadow: 0px 8px 25px 0 rgba(0, 0, 0, 25%);
+    }
+
+    .small-activities-listing {
+        background-color: white;
+        margin: 1em;
+        border-radius: 20px;
+        box-shadow: 0px 8px 25px 0 rgba(0, 0, 0, 25%);
+    }
+
     .activities-image img {
         width: 22em;
         height: 12em;
         object-fit: cover;
-        padding: 1em;
-        border-top-left-radius: 12% 25%;
-        border-top-right-radius: 12% 25%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
     }
 
     .tall-activities-image img {
         width: 22em;
         height: 25em;
         object-fit: cover;
-        padding: 1em;
-        border-top-left-radius: 14% 12%;
-        border-top-right-radius: 14% 12%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
     .activities h4 {
-        padding-left: 2em;
-        border-bottom: cornflowerblue 1em;
+        padding: 1em;
     }
 
     footer {
         background-color: rgb(242, 242, 242);
         display: flex;
+        justify-content: space-evenly;
         margin-top: 2em;
         padding: 1em;
         line-height: 2em;
