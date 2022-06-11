@@ -209,7 +209,7 @@
     }
 
     .hotel-name {
-        font-weight: 600;
+        font-weight: 8=700;
     }
 
     .hotel-info {
@@ -234,17 +234,6 @@
     .most-popular-star-icon {
         float: right;
     }
-    
-    .popular-image img{
-        float: left;
-        width: 6em;
-        height: 7em;
-        object-fit: cover;
-        padding: .25em;
-        justify-content: center;
-        border-top-left-radius: 16% 16%;
-        border-bottom-left-radius: 16% 16%;
-    }
 
     .popular-hotel-listing {
         display: flex;
@@ -254,11 +243,31 @@
         margin-bottom: 2em;
         align-items: center;
     }
+    
+    .popular-image img{
+        float: left;
+        width: 8em;
+        height: 8em;
+        object-fit: cover;
+        padding: .25em;
+        justify-content: center;
+        border-top-left-radius: 16% 16%;
+        border-bottom-left-radius: 16% 16%;
+    }
 
     .popular-hotel-info {
         display: inline-block;
-        padding-left: 1em;
-        line-height: 2em;    
+        padding: 1em 0 0 1em;
+        line-height: 3em;    
+    }
+
+    .popular-hotel-info h4 {
+        line-height: 1em;
+    }
+
+    .popular-hotel-star-rating {
+        align
+        padding-bottom: 0em;
     }
 
     .activities-col {
@@ -273,33 +282,46 @@
         justify-content: flex-start;
     }
 
-    .tall-activities-listing {
+    .activities-listing {
         background-color: white;
-        margin: 1em;
         border-radius: 20px;
-        box-shadow: 0px 8px 25px 0 rgba(0, 0, 0, 25%);
+        margin: 1em;
+        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
     }
 
-    .small-activities-listing {
-        background-color: white;
-        margin: 1em;
-        border-radius: 20px;
-        box-shadow: 0px 8px 25px 0 rgba(0, 0, 0, 25%);
+    .large-activities-image {
+        width: 20em;
+        height: 24.4em;
+        object-fit: cover;
+        object-position: 40% 40%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
-    .activities-image img {
-        width: 22em;
+    .medium-activities-image {
+        width: 20em;
         height: 12em;
         object-fit: cover;
+        object-position: 0 40%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .small-activities-image {
+        width: 20em;
+        height: 10em;
+        object-fit: cover;
+        object-position: 0 20%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         
     }
 
-    .tall-activities-image img {
-        width: 22em;
-        height: 25em;
+    .xsmall-activities-image {
+        width: 20em;
+        height: 8em;
         object-fit: cover;
+        object-position: 0 15%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
