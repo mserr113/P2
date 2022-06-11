@@ -311,14 +311,20 @@
     footer {
         background-color: rgb(242, 242, 242);
         display: flex;
-        justify-content: space-evenly;
-        margin-top: 2em;
-        padding: 1em;
+        justify-content: flex-start;
+        margin-left: -2.5em;
+        margin-right: -2.5em;
+        padding: 2em 0em 0em 3.5em;
         line-height: 2em;
+    }
+
+    footer h4 {
+        padding-bottom: 1em;
     }
 
     footer ul {
         display: inline-block;
+        padding-right: 20em;
     }
 
     footer ul li {
