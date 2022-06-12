@@ -74,9 +74,10 @@
         line-height: 1.3em;
     }
 
-    h1 {
+    .page-headline h1 {
         font-size: 1.55em;
         font-weight: 400;
+        margin-top: 1em;
     }
 
     @media (max-width: 700px){
@@ -91,8 +92,8 @@
     }
 
     form {
-        width: 16em;
-        height: 4em;
+        width: 15em;
+        height: 3.75em;
         margin-top: 1em;
         display: flex;
     }
@@ -103,7 +104,7 @@
         border-style: solid;
         border-color: rgb(242, 242, 242);
         text-indent: .75em;  
-        font-size: 1.5em;
+        font-size: 1.25em;
         font-weight: 700;
     }
 
@@ -114,27 +115,31 @@
     }
 
     form button {
-        background: blue;
+        background: rgb(0, 101, 252);
         border: none;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         align-self: center;
-        padding: .75em 1em;
+        padding: .9em 1em;
         color: white;
-        font-size: 1.5em;
+        font-size: 1.25em;
         font-weight: 600;  
+    }
+
+    form button:hover {
+        border-color: blue;
     }
 
     form .fa-location-dot {
         background-color: rgb(242, 242, 242);
         align-self: center;
-        padding: 1.32em .75em;
+        padding: 1.47em 1em;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
     .container-filters {
-        padding-top: 2em;
+        margin-top: 2em;
     }
 
     .filters-heading {
@@ -157,12 +162,11 @@
     .container-filters button {
         background:none;
         border-style: solid;
-        border-color: rgb(231, 231, 231);
+        border-color: rgb(217, 217, 217);
         border-left: none;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
-        padding: .55em;
-        padding-left: 1.3em;
+        padding: .55em 1em .55em 1.5em;
         margin-right: .7em;
         margin-left: -1.3em;
         vertical-align: middle;
@@ -172,15 +176,26 @@
         padding: 2em;
     }
 
+    .available-accommodations i {
+        margin-left: -2em;
+        color: rgb(0, 101, 252);
+        background-color: white;
+        border-style: solid;
+        padding: .5em .75em .5em .75em;
+        border-color: rgb(217, 217, 217);
+        border-radius: 60%;
+    }
+
     .accommodations-col{
         float: left;
         background-color: rgb(242, 242, 242);
         border-radius: 25px;
         width: 66%;
-        padding: 2em;
+        padding: 2.5em;
+        margin-bottom: 3em;
     }
 
-    .accommodations-col h3 {
+    .accommodations-headline {
         margin-bottom: 1em;
     }
 
@@ -196,11 +211,12 @@
         background-color: white;
         border-radius: 8%;
         margin-bottom: 2em;
+        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%)
     }
 
     .hotel-image img{
         width: 100%;
-        height: 7em;
+        height: 8em;
         object-fit: cover;
         padding: .25em;
         justify-content: center;
@@ -208,14 +224,38 @@
         border-top-right-radius: 8% 16%;
     }
 
-    .hotel-name {
-        font-weight: 8=700;
-    }
-
     .hotel-info {
         padding-left: 1em;
         line-height: 1.5em;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .hotel-name {
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+
+    .hotel-price {
+        font-size: .97em;
+    }
+
+    .star-rating {
+        color: rgb(217, 217, 217);
+    } 
+
+    .star-rating i {
+        margin-right: -.25em;
+    }
+
+    .checked {
+        color: rgb(0, 101, 252);
+    }
+
+    .show-more {
+        display: inline-block;
+        font-size: 1.25em;
+        font-weight: 700;
+        padding:  .6em 0;
     }
 
     .most-popular-col{
@@ -223,11 +263,11 @@
         background-color: rgb(242, 242, 242);
         border-radius: 25px;
         width: 31%;
-        padding: 2em;
+        padding: 2.5em 2.5em 0 2.5em;
         align-items: center;
     }   
 
-    .most-popular-headline h3 {
+    .most-popular-headline h2 {
         display: inline-block;
         padding-bottom: 1em;
     }
@@ -241,39 +281,29 @@
         background-color: white;
         border-radius: 5%/14%;
         margin-bottom: 2em;
-        align-items: center;
+        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%)
     }
     
     .popular-image img{
         float: left;
-        width: 8em;
-        height: 8em;
+        width: 9em;
+        height: 10em;
         object-fit: cover;
-        padding: .25em;
+        padding: .3em;
         justify-content: center;
         border-top-left-radius: 16% 16%;
         border-bottom-left-radius: 16% 16%;
     }
 
     .popular-hotel-info {
-        display: inline-block;
-        padding: 1em 0 0 1em;
-        line-height: 3em;    
-    }
-
-    .popular-hotel-info h4 {
-        line-height: 1em;
-    }
-
-    .popular-hotel-star-rating {
-        align
-        padding-bottom: 0em;
+        padding: 1em 0 0 1em;  
     }
 
     .activities-col {
         clear: both;
         width: 100%;
         align-items: center;
+        padding-bottom: 2em;
     }
 
     .activities {
