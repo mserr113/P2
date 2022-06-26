@@ -82,7 +82,7 @@
     }
 
     form .fa-location-dot {
-        background-color: rgb(242, 242, 242);
+        background-color: #F2F2F2;
         align-self: center;
         padding: 1.47em 1em;
         border-top-left-radius: 20px;
@@ -93,7 +93,7 @@
         flex: 56%;
         outline: none;
         border-style: solid;
-        border-color: rgb(242, 242, 242);
+        border-color: #F2F2F2;
         text-indent: .75em;  
         font-size: 1.25em;
         font-weight: 700;
@@ -110,7 +110,7 @@
     }
 
     .search {
-        background: rgb(0, 101, 252);
+        background: #0065FC;
         border: none;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -144,17 +144,21 @@
         border-radius: 25px;
         padding: 0 1.5em 0 0;
         margin-right: .7em;
-        margin-bottom: 1em;
         vertical-align: middle;
         background-color: white;
-        border-color: rgb(217, 217, 217);
+        border-color: #F2F2F2;
         border-style: solid;
         border-left: none;
     }
+
+    .filter-button:hover {
+        outline-style: groove;
+        outline-color: #0065FC;
+    }
         
     .container-filters i {
-        background-color: rgb(222, 235, 255);
-        color: rgb(41, 109, 252);
+        background-color: #DEEBFF;
+        color: #0065FC;
         width: 47px;
         line-height: 45px;
         text-align: center;
@@ -172,11 +176,11 @@
 
     .available-accommodations i {
         margin-left: -2em;
-        color: rgb(0, 101, 252);
+        color: #0065FC;
         background-color: white;
         border-style: solid;
         padding: .5 em .1em .5em .75em;
-        border-color: rgb(217, 217, 217);
+        border-color: #F2F2F2;
         border-radius: 60%;
     }
 
@@ -186,9 +190,9 @@
         gap: 2em;
     }
 
-    .accommodations-col{
+    #accommodations-col{
         flex: 3 0 65%;
-        background-color: rgb(242, 242, 242);
+        background-color: #F2F2F2;
         border-radius: 25px;
         padding: 2.5em;
         margin-bottom: 3em;
@@ -202,16 +206,25 @@
         display: flex;
         flex-flow: row wrap;
         gap: 2em;
+        margin: 2em 0;
         justify-content:space-between;
         align-items: center;
     }
 
+    .hotels a {
+        text-decoration: none;
+
+    }
+
+    a:visited { 
+        color: black }
+
     .hotel-listing {
-        flex: 1 0 17em;
+        flex: 1 1 30%;
         height: auto;
         background-color: white;
         border-radius: 8%;
-        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%)
+        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
     }
 
     .hotel-image img{
@@ -244,27 +257,26 @@
         font-weight: 600;
     }
 
-    .star-rating {
-        color: rgb(217, 217, 217);
+    .star-rating, .popular-star-rating {
+        color: #F2F2F2;
     } 
 
-    .star-rating i {
+    .star-rating i, .popular-star-rating i {
         margin-right: -.25em;
     }
 
     .checked {
-        color: rgb(0, 101, 252);
+        color: #0065FC;
     }
 
     .show-more {
-        flex-basis: 100%;
+        flex: 1;
         font-size: 1.25em;
         font-weight: 700;
-        padding:  .6em 0;
     }
 
     .most-popular-col{
-        background-color: rgb(242, 242, 242);
+        background-color: #F2F2F2;
         border-radius: 25px;
         flex: 1 0 30%;
         padding: 2.5em 2.5em 0 2.5em;
@@ -274,7 +286,6 @@
 
     .most-popular-headline h2 {
         display: inline-block;
-        padding-bottom: 1em;
     }
     .most-popular-star-icon {
         float: right;
@@ -285,7 +296,8 @@
         width: 100%;
         background-color: white;
         border-radius: 5%/14%;
-        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%)
+        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
+        position: relative;
     }
     
     .popular-image img{
@@ -300,10 +312,19 @@
     }
 
     .popular-hotel-info {
-        padding: 1em 0 0 1em;  
+        overflow: hidden;
+        padding: 1em 0 0 1em;
     }
 
-    .activities-col h2 {
+    .popular-star-rating {
+        vertical-align: bottom;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: .75em;
+    }
+
+
+    #activities-col h2 {
         padding-bottom: 1em;
     }
 
@@ -367,7 +388,7 @@
     }
 
     footer {
-        background-color: rgb(242, 242, 242);
+        background-color: #F2F2F2;
         display: flex;
         gap: 2em;   
         justify-content: space-evenly;
@@ -419,10 +440,6 @@
             
         }
 
-        .nav-links ul li a {
-            
-        }
-
         .page-headline {
             padding-left: 1em;
         }
@@ -441,7 +458,7 @@
 
         .search-icon {
             display: block;
-            background: rgb(0, 101, 252);
+            background: #0065FC;
             border: none;
             border-radius: 20px;
             align-self: center;
@@ -462,10 +479,10 @@
         }
 
         .filters-heading {
-            margin-bottom: 1em;
+            justify-content: center;
         }
         
-        .accommodations-col{
+        #accommodations-col{
             background: none;
             width: 100%;
             padding: 2.5em;
@@ -487,7 +504,7 @@
         .most-popular-col{
             order: -1;
             border-radius: 0;
-            background-color: rgb(242, 242, 242);
+            background-color: #F2F2F2;
             width: 100%;
             padding: 2.5em 2.5em 2.5em 2.5em;
             align-items: center;
