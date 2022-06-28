@@ -410,9 +410,7 @@
     }
 
     @media (max-width: 768px){
-        body {
-            display: flex;
-            flex-direction: column;
+        .header, .main {
             margin: 0;
         }
 
@@ -423,37 +421,40 @@
 
         .logo {
             float: none;
-            margin-bottom: 1em;
+            margin: 1em
         }
 
         .nav-links {
             display: flex;
             flex-flow: row;
-            margin: 0;
-            padding: 0;
-            align-self: center;
+        }
+
+        .nav-links ul {
+            width: 100%;
         }
 
         .nav-links ul li {
-            padding: 0 1em 0 1em;
-            border-bottom: .3em solid darkblue;
-            
+            margin: 0;
+            width: 49.7%;
+            padding-left: 0;
+            border-bottom: .3em solid #F2F2F2;
+            text-align: center;
         }
 
-        .page-headline {
-            padding-left: 1em;
+        .nav-links ul li:active {
+            border-color: #0065FC;
         }
 
-        .main {
-            display: flex;
-            flex-wrap: wrap;
+        .nav-links ul li::before {
+            content: none;
         }
-        form {
-            width: 80%;
-            height: 3.75em;
-            margin-top: 1em;
-            display: flex;
-            padding-left: 1em;
+
+        .page-headline, .location-search, .container-filters {
+            margin: 0 1em 2em 1em;
+        }
+
+        .location-search {
+            width: calc(100% - 2em);
         }
 
         .search-icon {
@@ -473,41 +474,61 @@
             display: none;
         }
 
-        .container-filters {
-            display: flex;   
-            padding-left: 1em;   
-        }
-
-        .filters-heading {
-            justify-content: center;
-        }
-        
-        #accommodations-col{
-            background: none;
-            width: 100%;
-            padding: 2.5em;
-            margin-bottom: 3em;
-        }
-
-        .accommodations-headline {
+        .filter-button {
             margin-bottom: 1em;
+        }
+
+        .listing-sections {
+            display: flex;
+            flex-flow: column wrap;
+            
+        }
+
+        #accommodations-col{
+            background-color: unset;
+            margin: 0;
+        }
+
+        .hotels {
+            display: flex;
+            flex-flow: column wrap; 
         }
 
         .hotel-listing {
             width: 100%;
-            background-color: white;
-            border-radius: 8%;
-            margin-bottom: 2em;
-            box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%)
+            border-top-left-radius: 4% 6%;
+            border-top-right-radius: 4% 6%;
+            border-bottom-left-radius: 4% 6%;
+            border-bottom-right-radius: 4% 6%;
+        
         }
 
-        .most-popular-col{
+        .hotel-image img{
+            border-top-left-radius: 4% 8%; 
+            border-top-right-radius: 4% 8%;
+        }
+
+        .most-popular-col {
             order: -1;
             border-radius: 0;
-            background-color: #F2F2F2;
-            width: 100%;
-            padding: 2.5em 2.5em 2.5em 2.5em;
-            align-items: center;
+            margin: 0;
+        }
+
+        .popular-hotel-listing {
+            border-top-left-radius: 3% 12%;
+            border-top-right-radius: 3% 12%;
+            border-bottom-left-radius: 3% 12%;
+            border-bottom-right-radius: 3% 12%;
+        }
+
+        .popular-image img {
+            border-top-left-radius: 13%;
+            border-bottom-left-radius: 13%;
+        }
+
+        #activities-col {
+            padding-left: 2.5em;
+            padding-right: 2.5em;
         }
 
         .column {
@@ -515,12 +536,26 @@
             max-width: 100%;
         }
 
-        .activities-listing img {
-            height: 15em;
+        .large-activities-image, .xsmall-activities-image, .small-activities-image {
+            width: 100%;
+            height: 20em;
+            object-position: 0 15%;
         }
 
-        .footer {
+        .medium-activities-image {
             width: 100%;
+            height: 20em;
+            object-position: 0 45%;
+        }
+
+        footer {
+            flex-flow: column wrap;
+            
+        }
+
+        footer div {
+            width: 100%;
+
         }
 
     }
