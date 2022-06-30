@@ -194,7 +194,7 @@
         flex: 3 0 65%;
         background-color: #F2F2F2;
         border-radius: 25px;
-        padding: 2.5em;
+        padding: 2em;
         margin-bottom: 3em;
     }
 
@@ -220,7 +220,7 @@
         color: black }
 
     .hotel-listing {
-        flex: 1 1 30%;
+        flex: 1 1 25%;  
         height: auto;
         background-color: white;
         border-radius: 8%;
@@ -279,7 +279,7 @@
         background-color: #F2F2F2;
         border-radius: 25px;
         flex: 1 0 30%;
-        padding: 2.5em 2.5em 0 2.5em;
+        padding: 2em 2em 0 2em;
         align-items: center;
         margin-bottom: 3em;
     }   
@@ -294,16 +294,18 @@
     .popular-hotel-listing {
         display: flex;
         width: 100%;
+        min-width: 217px;
         background-color: white;
-        border-radius: 5%/14%;
+        border-radius: 7%/14%;
         box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
         position: relative;
     }
     
     .popular-image img{
         float: left;
-        width: 9em;
-        height: 10em;
+        aspect-ratio: 1.5 / 1.75;
+        width: 40%;
+        height: auto;
         object-fit: cover;
         padding: .3em;
         justify-content: center;
@@ -409,7 +411,18 @@
         list-style: none;
     }
 
-    @media (max-width: 768px){
+    @media screen and (max-width: 1400px) {
+        .hotel-name {
+            font-weight: 700;
+            font-size: .9em;
+        }
+    
+        .hotel-rate {
+            font-size: .8em;
+        }
+    }
+
+    @media screen and (max-width: 768px){
         .header, .main {
             margin: 0;
         }
