@@ -10,8 +10,8 @@
     }
 
     .header, .main {
-        margin-left: 2.5em;
-        margin-right: 2.5em;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .navbar {
@@ -19,10 +19,10 @@
     }
 
     .logo {
-        height: 3.125em;
-        margin-top: 3.125em;
-        margin-left: -1em;
-        margin-bottom: 3em;
+        height: 50px;
+        margin-top: 50px;
+        margin-left: -16px;
+        margin-bottom: 30px;
     }
 
     .nav-links {
@@ -33,8 +33,8 @@
     .nav-links ul li {
         list-style: none;
         display: inline-block;
-        padding: 1.87em 0;
-        margin-left: 2em;
+        padding: 29.92px 0;
+        margin-left: 32px;
         position: relative;
     }
 
@@ -46,7 +46,7 @@
     .nav-links ul li::before {
         content: "";
         width: 0%;
-        height: .125em;
+        height: 3px;
         background-color: blue;
         display: block;
         margin: auto;
@@ -65,28 +65,28 @@
 
     .page-headline {
         clear: both;
-        line-height: 1.3em;
+        line-height: 15px;
     }
 
     .page-headline h1 {
-        font-size: 1.55em;
+        font-size: 24.8px;
         font-weight: 400;
-        margin-top: 1em;
+
     }
 
     form {
         width: 15em;
-        height: 3.75em;
-        margin-top: 1em;
+        height: 48px;
+        margin-top: 16px;
         display: flex;
     }
 
     form .fa-location-dot {
         background-color: #F2F2F2;
         align-self: center;
-        padding: 1.47em 1em;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        padding: 23.5px 16px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     form input {
@@ -94,8 +94,8 @@
         outline: none;
         border-style: solid;
         border-color: #F2F2F2;
-        text-indent: .75em;  
-        font-size: 1.25em;
+        text-indent: 12px;  
+        font-size: 20px;
         font-weight: 700;
     }
 
@@ -112,12 +112,12 @@
     .search {
         background: #0065FC;
         border: none;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
         align-self: center;
-        padding: .9em 1em;
+        padding: 12.5px 16px;
         color: white;
-        font-size: 1.25em;
+        font-size: 20px;
         font-weight: 600;  
     }
 
@@ -126,13 +126,13 @@
     }
 
     .container-filters {
-        margin-top: 2em;
+        margin-top: 32px;
         display: flex;
         flex-flow: row wrap;
     }
 
     .filters-heading {
-        margin-right: 2em;
+        margin-right: 32px;
         align-self: center;
         font-weight: 700;
     }
@@ -142,8 +142,8 @@
         font-weight:700;
         border-left: none;
         border-radius: 25px;
-        padding: 0 1.5em 0 0;
-        margin-right: .7em;
+        padding: 0 24px 0 0;
+        margin-right: 11.2px;
         vertical-align: middle;
         background-color: white;
         border-color: #F2F2F2;
@@ -163,57 +163,52 @@
         line-height: 45px;
         text-align: center;
         vertical-align: middle;
-        margin-right: .7em;
+        margin-right: 11.2px;
         border-radius: 25px;
         z-index: 1;
         position: relative;
-    } 
+    }
 
     .available-accommodations {
         width: 100%;
-        padding: 2em;
+        padding: 32px;
     }
 
     .available-accommodations i {
-        margin-left: -2em;
+        margin-left: -32px;
         color: #0065FC;
         background-color: white;
         border-style: solid;
-        padding: .5 em .1em .5em .75em;
+        padding: 0 12px;
         border-color: #F2F2F2;
-        border-radius: 60%;
+        border-radius: 25px;
     }
 
     .listing-sections {
         display: flex;
         flex-flow: row wrap;
-        gap: 2em;
+        gap: 32px;
     }
 
     #accommodations-col{
         flex: 3 0 65%;
         background-color: #F2F2F2;
-        border-radius: 25px;
-        padding: 2em;
-        margin-bottom: 3em;
-    }
-
-    .accommodations-headline {
-        margin-bottom: 1em;
+        border-radius: 15px;
+        padding: 30px;
     }
 
     .hotels {
         display: flex;
         flex-flow: row wrap;
-        gap: 2em;
-        margin: 2em 0;
+        gap: 30px;
+        margin: 32px 0;
         justify-content:space-between;
         align-items: center;
     }
 
     .hotels a {
         text-decoration: none;
-
+        color: black;
     }
 
     a:visited { 
@@ -223,7 +218,7 @@
         flex: 1 1 25%;  
         height: auto;
         background-color: white;
-        border-radius: 8%;
+        border-radius: 15px;
         box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
     }
 
@@ -232,37 +227,37 @@
         width: 100%;
         height: auto;
         object-fit: cover;
-        padding: .25em;
+        padding: 4px;
         justify-content: center;
-        border-top-left-radius: 8% 16%;
-        border-top-right-radius: 8% 16%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
     .hotel-info {
-        padding-left: 1em;
-        line-height: 1.5em;
-        margin-bottom: 0.5em;
+        padding-left: 16px;
     }
 
     .hotel-name {
         font-weight: 700;
-        font-size: 1.1em;
+        font-size: 16px;
     }
 
     .hotel-rate {
-        font-size: .97em;
+        font-size: 14px;
     }
 
     .hotel-price {
         font-weight: 600;
+        line-height: 20px;
     }
 
     .star-rating, .popular-star-rating {
         color: #F2F2F2;
+        padding-bottom: 8px;
     } 
 
     .star-rating i, .popular-star-rating i {
-        margin-right: -.25em;
+        margin-right: -4px;
     }
 
     .checked {
@@ -271,17 +266,16 @@
 
     .show-more {
         flex: 1;
-        font-size: 1.25em;
+        font-size: 20px;
         font-weight: 700;
     }
 
     .most-popular-col{
         background-color: #F2F2F2;
-        border-radius: 25px;
+        border-radius: 15px;
         flex: 1 0 30%;
-        padding: 2em 2em 0 2em;
+        padding: 30px 30px 0 30px;
         align-items: center;
-        margin-bottom: 3em;
     }   
 
     .most-popular-headline h2 {
@@ -294,9 +288,9 @@
     .popular-hotel-listing {
         display: flex;
         width: 100%;
-        min-width: 217px;
+        min-width: 100px;
         background-color: white;
-        border-radius: 7%/14%;
+        border-radius: 15px;
         box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
         position: relative;
     }
@@ -304,99 +298,128 @@
     .popular-image img{
         float: left;
         aspect-ratio: 1.5 / 1.75;
-        width: 40%;
+        width: 35%;
         height: auto;
         object-fit: cover;
-        padding: .3em;
+        padding: 4px;
         justify-content: center;
-        border-top-left-radius: 16% 16%;
-        border-bottom-left-radius: 16% 16%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     .popular-hotel-info {
         overflow: hidden;
-        padding: 1em 0 0 1em;
+        padding: 16px 0 0 16px;
     }
 
     .popular-star-rating {
         vertical-align: bottom;
         position: absolute;
         bottom: 0;
-        padding-bottom: .75em;
     }
 
-
     #activities-col h2 {
-        padding-bottom: 1em;
+        padding-bottom: 16px;
     }
 
     .activities {
         display: flex;
         flex-wrap: wrap;
-        gap: 2em; 
+        gap: 30px; 
     }
 
     .column {
-        flex: calc(25% - 2em);
+        flex: calc(25% - 32px);
         max-width: 25%;
+        height: 500px;
+    }
+
+    .column a {
+        text-decoration: none;
+        color: black;
     }
 
     .activities-listing {
+        height: calc(100% - 32px);
         background-color: white;
-        border-radius: 20px;
-        margin-bottom: 2em;
+        border-radius: 15px;
+        margin-bottom: 32px;
         box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
     }
     
     .large-activities-image {
         width: 100%;
-        height: 24em;
+        height: calc(100% - 50px);
         object-fit: cover;
         object-position: 40% 40%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .medium-activities-listing {
+        height: calc(100% - 40% - 32px);
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 32px;
+        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
     }
 
     .medium-activities-image {
         width: 100%;
-        height: 12em;
+        height: calc(100% - 50px);
         object-fit: cover;
         object-position: 0 40%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
+
+    .small-activities-listing {
+        height: calc(100% - 50% - 32px);
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 32px;
+        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
+    }
+
 
     .small-activities-image {
         width: 100%;
-        height: 9.3em;
+        height: calc(100% - 50px);
         object-fit: cover;
         object-position: 0 20%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;  
+    }
+
+    .xsmall-activities-listing {
+        height: calc(100% - 60% - 32px);
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 32px;
+        box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 25%);
     }
 
     .xsmall-activities-image {
         width: 100%;
-        height: 6.6em;
+        height: calc(100% - 50px);
         object-fit: cover;
         object-position: 0 25%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
-    .activities h4 {
-        padding: 1em;
+    .activities-name {
+        padding: 10px 0 10px 16px;
     }
 
     footer {
         background-color: #F2F2F2;
         display: flex;
-        gap: 2em;   
+        gap: 32px;   
         justify-content: space-evenly;
-        margin-left: 0em;
-        padding: 2em 0em 0em 3.5em;
-        line-height: 2em;
+        margin-left: 0;
+        padding: 32px 0 0 38px;
+        line-height: 32px;
     }
 
     footer div {
@@ -404,7 +427,7 @@
     }
 
     footer h4 {
-        padding-bottom: 1em;
+        padding-bottom: 16px;
     }
 
     footer ul li {
@@ -412,17 +435,60 @@
     }
 
     @media screen and (max-width: 1400px) {
+        .hotel-info {
+            padding-left: 12px;
+        }
+        
         .hotel-name {
-            font-weight: 700;
-            font-size: .9em;
+            font-size: 14px;
         }
     
         .hotel-rate {
-            font-size: .8em;
+            font-size: 12.8px;
+        }
+
+        .popular-hotel-info {
+            padding: 8px 0 0 8px;
+        }
+
+        .activities-name {
+            padding: 12px;
+            font-weight: 700;
+            font-size: 14.4px;
         }
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1200px) {
+        .hotel-info {
+            padding-left: 8px;
+        }
+        
+        .hotel-name {
+            font-size: 12.8px;
+        }
+    
+        .hotel-rate {
+            font-size: 11.2px;
+        }
+
+        .popular-image img{
+            width: 40%;
+        }
+
+        .popular-hotel-info {
+            padding-left: 4px;
+        }
+
+        .activities-name {
+            padding: 8px;
+            font-weight: 700;
+            font-size: 12.8px;
+        }
+    }
+        
+
+    @media screen and (max-width: 992px){
+
         .header, .main {
             margin: 0;
         }
@@ -434,7 +500,7 @@
 
         .logo {
             float: none;
-            margin: 1em
+            margin: 16px
         }
 
         .nav-links {
@@ -443,14 +509,16 @@
         }
 
         .nav-links ul {
+            display: flex;
+            flex-direction: row;
             width: 100%;
         }
 
         .nav-links ul li {
+            flex-grow: 1;
             margin: 0;
-            width: 49.7%;
             padding-left: 0;
-            border-bottom: .3em solid #F2F2F2;
+            border-bottom: 4px solid #F2F2F2;
             text-align: center;
         }
 
@@ -463,23 +531,23 @@
         }
 
         .page-headline, .location-search, .container-filters {
-            margin: 0 1em 2em 1em;
+            margin: 0 16px 32px 16px;
         }
 
         .location-search {
-            width: calc(100% - 2em);
+            width: calc(100% - 32px);
         }
 
         .search-icon {
             display: block;
             background: #0065FC;
             border: none;
-            border-radius: 20px;
+            border-radius: 15px;
             align-self: center;
-            margin-left: -1em;
-            padding: .9em 1em;
+            margin-left: -16px;
+            padding: 12.5px 16px;
             color: white;
-            font-size: 1.25em;
+            font-size: 20px;
             font-weight: 600;  
         }
     
@@ -487,14 +555,14 @@
             display: none;
         }
 
+        .filters-heading,
         .filter-button {
-            margin-bottom: 1em;
+            margin-bottom: 16px;
         }
 
         .listing-sections {
             display: flex;
             flex-flow: column wrap;
-            
         }
 
         #accommodations-col{
@@ -509,16 +577,26 @@
 
         .hotel-listing {
             width: 100%;
-            border-top-left-radius: 4% 6%;
-            border-top-right-radius: 4% 6%;
-            border-bottom-left-radius: 4% 6%;
-            border-bottom-right-radius: 4% 6%;
-        
         }
 
-        .hotel-image img{
-            border-top-left-radius: 4% 8%; 
-            border-top-right-radius: 4% 8%;
+        .hotel-image img {
+            height: 30vh;
+        }
+
+        .hotel-info {
+            padding-left: 16px;
+        }
+    
+        .hotel-name {
+            font-size: 16px;
+        }
+    
+        .hotel-rate {
+            font-size: 14px;
+        }
+    
+        .hotel-price {
+            line-height: 20px;
         }
 
         .most-popular-col {
@@ -527,39 +605,50 @@
             margin: 0;
         }
 
-        .popular-hotel-listing {
-            border-top-left-radius: 3% 12%;
-            border-top-right-radius: 3% 12%;
-            border-bottom-left-radius: 3% 12%;
-            border-bottom-right-radius: 3% 12%;
+        .popular-hotel-info {
+            padding: 16px 0 0 16px;
         }
 
         .popular-image img {
-            border-top-left-radius: 13%;
-            border-bottom-left-radius: 13%;
+            width: auto;
+            height: 25vh;
         }
 
         #activities-col {
-            padding-left: 2.5em;
-            padding-right: 2.5em;
+            padding-left: 40px;
+            padding-right: 40px;
         }
 
+        .activities {
+            flex-direction: column;
+            gap: 0;
+        }
         .column {
             flex: 100%;
             max-width: 100%;
         }
 
-        .large-activities-image, .xsmall-activities-image, .small-activities-image {
-            width: 100%;
-            height: 20em;
+        .activities-name {
+            font-size: 16px;
+            padding-top: 10px;
+        }
+
+        .activities-listing,
+        .medium-activities-listing,
+        .xsmall-activities-listing,
+        .small-activities-listing {
+            height: 30vh;
+            margin-bottom: 32px;
+        }
+
+        .large-activities-image, 
+        .xsmall-activities-image, 
+        .small-activities-image {
             object-position: 0 15%;
         }
 
         .medium-activities-image {
-            width: 100%;
-            height: 20em;
             object-position: 0 45%;
-        }
 
         footer {
             flex-flow: column wrap;
@@ -570,5 +659,12 @@
             width: 100%;
 
         }
+    }
 
+    @media screen and (max-width: 700px){
+        .large-activities-image, 
+        .xsmall-activities-image, 
+        .small-activities-image {
+            object-position: 0 25%;
+        }
     }
