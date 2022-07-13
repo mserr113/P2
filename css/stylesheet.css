@@ -149,6 +149,7 @@
         border-color: #F2F2F2;
         border-style: solid;
         border-left: none;
+        cursor: pointer;
     }
 
     .filter-button:hover {
@@ -434,6 +435,11 @@
         list-style: none;
     }
 
+    footer ul li a {
+        color: black;
+        text-decoration: none;
+    }
+
     @media screen and (max-width: 1400px) {
         .hotel-info {
             padding-left: 12px;
@@ -579,10 +585,6 @@
             width: 100%;
         }
 
-        .hotel-image img {
-            height: 30vh;
-        }
-
         .hotel-info {
             padding-left: 16px;
         }
@@ -637,34 +639,28 @@
         .medium-activities-listing,
         .xsmall-activities-listing,
         .small-activities-listing {
-            height: 30vh;
+            height: 40vh;
             margin-bottom: 32px;
         }
 
         .large-activities-image, 
         .xsmall-activities-image, 
         .small-activities-image {
-            object-position: 0 15%;
+            object-position: 0 40%;
         }
 
         .medium-activities-image {
-            object-position: 0 45%;
-
-        footer {
-            flex-flow: column wrap;
-            
+            object-position: 0 50%;
         }
 
         footer div {
             width: 100%;
-
         }
     }
 
-    @media screen and (max-width: 700px){
-        .large-activities-image, 
-        .xsmall-activities-image, 
-        .small-activities-image {
-            object-position: 0 25%;
+
+    @media screen and (max-width: 789px){
+    footer {
+        flex-flow: column wrap;
         }
     }
