@@ -498,9 +498,103 @@
         
 
     @media screen and (max-width: 992px){
+        .listing-sections {
+            display: flex;
+            flex-flow: column;
+        }
 
+        #accommodations-col{
+            background-color: unset;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hotel-listing {
+            flex: 1 1 35%;
+        }
+
+        .hotel-info {
+            padding-left: 16px;
+        }
+    
+        .hotel-name {
+            font-size: 16px;
+        }
+    
+        .hotel-rate {
+            font-size: 14px;
+        }
+    
+        .hotel-price {
+            line-height: 20px;
+        }
+
+        .popular-hotel-info {
+            padding: 16px 0 0 16px;
+        }
+
+        .popular-image img {
+            width: auto;
+            height: 25vh;
+        }
+
+        #activities-col {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .activities {
+            flex-direction: column;
+            gap: 0;
+        }
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+
+        .activities-name {
+            font-size: 16px;
+            padding-top: 10px;
+        }
+
+        .activities-listing,
+        .medium-activities-listing,
+        .xsmall-activities-listing,
+        .small-activities-listing {
+            height: 40vh;
+            margin-bottom: 32px;
+        }
+
+        .large-activities-image, 
+        .xsmall-activities-image, 
+        .small-activities-image {
+            object-position: 0 40%;
+        }
+
+        .medium-activities-image {
+            object-position: 0 50%;
+        }
+        
+    }
+
+
+    @media screen and (max-width: 929px){
+        .filters-heading,
+        .filter-button {
+            margin-bottom: 16px;
+        }
+
+        .available-accommodations {
+            padding-top: 8px;
+        }
+    }
+    @media screen and (max-width: 786px){
         .header, .main {
             margin: 0;
+        }
+
+        .location-search {
+            width: calc(100% - 32px);
         }
 
         .navbar {
@@ -544,109 +638,6 @@
             margin: 0 16px 32px 16px;
         }
 
-        .location-search {
-            width: calc(100% - 32px);
-        }
-
-        .filters-heading,
-        .filter-button {
-            margin-bottom: 16px;
-        }
-
-        .listing-sections {
-            display: flex;
-            flex-flow: column;
-        }
-
-        #accommodations-col{
-            background-color: unset;
-            margin: 0;
-        }
-
-        .hotels {
-            display: flex;
-            flex-flow: column; 
-        }
-
-        .hotel-listing {
-            width: 100%;
-        }
-
-        .hotel-info {
-            padding-left: 16px;
-        }
-    
-        .hotel-name {
-            font-size: 16px;
-        }
-    
-        .hotel-rate {
-            font-size: 14px;
-        }
-    
-        .hotel-price {
-            line-height: 20px;
-        }
-
-        .most-popular-col {
-            order: -1;
-            border-radius: 0;
-            margin: 0;
-        }
-
-        .popular-hotel-info {
-            padding: 16px 0 0 16px;
-        }
-
-        .popular-image img {
-            width: auto;
-            height: 25vh;
-        }
-
-        #activities-col {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-
-        .activities {
-            flex-direction: column;
-            gap: 0;
-        }
-        .column {
-            flex: 100%;
-            max-width: 100%;
-        }
-
-        .activities-name {
-            font-size: 16px;
-            padding-top: 10px;
-        }
-
-        .activities-listing,
-        .medium-activities-listing,
-        .xsmall-activities-listing,
-        .small-activities-listing {
-            height: 40vh;
-            margin-bottom: 32px;
-        }
-
-        .large-activities-image, 
-        .xsmall-activities-image, 
-        .small-activities-image {
-            object-position: 0 40%;
-        }
-
-        .medium-activities-image {
-            object-position: 0 50%;
-        }
-
-        footer div {
-            width: 100%;
-        }
-    }
-
-
-    @media screen and (max-width: 786px){
         .search-icon {
             display: block;
             background: #0065FC;
@@ -663,6 +654,36 @@
         .search {
             display: none;
         }
+
+        .available-accommodations {
+            padding: 16px 16px 10px 32px;
+        }
+
+        .listing-sections {
+            gap: 48px;
+        }
+
+        .hotels {
+            display: flex;
+            flex-flow: column; 
+        }
+
+        .hotel-listing {
+            width: 100%;
+        }
+
+        .most-popular-col {
+            order: -1;
+            border-radius: 0;
+            margin: 0;
+        }
+
+        #accommodations-col,
+        #activities-col {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
         footer {
             flex-flow: column wrap;
         }
