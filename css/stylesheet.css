@@ -555,7 +555,7 @@
 
         .listing-sections {
             display: flex;
-            flex-flow: column wrap;
+            flex-flow: column;
         }
 
         #accommodations-col{
